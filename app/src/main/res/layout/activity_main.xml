@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--il field  srcCompat="@drawable/nera" viene sostituito con il field
+    android:onClick="spostagiu"-->
+
+    <!--Ad ogni image vieV viene aggiunta un android:tag che distinguera le image viev una dall'altra.-->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grigliaId"
+        android:layout_width="355dp"
+        android:layout_height="458dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/download"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/giocaAncoraId"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageViev1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:onClick="spostagiu"
+            android:tag="1"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageViev2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:onClick="spostagiu"
+            android:tag="2"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageViev3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:onClick="spostagiu"
+            android:tag="3"
+            app:layout_column="2"
+            app:layout_row="0"
+            tools:layout_editor_absoluteX="-29dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <ImageView
+            android:id="@+id/imageViev4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:onClick="spostagiu"
+            android:tag="4"
+            app:layout_column="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_row="1"
+            tools:layout_editor_absoluteX="-25dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <ImageView
+            android:id="@+id/imageViev5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:onClick="spostagiu"
+            android:tag="5"
+            app:layout_column="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_row="1"
+            tools:layout_editor_absoluteX="-25dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <ImageView
+            android:id="@+id/imageViev6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:onClick="spostagiu"
+            android:tag="6"
+            app:layout_column="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_row="1"
+            tools:layout_editor_absoluteX="-25dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <ImageView
+            android:id="@+id/imageViev7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:onClick="spostagiu"
+            android:tag="7"
+            app:layout_column="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_row="2"
+            tools:layout_editor_absoluteX="-25dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <ImageView
+            android:id="@+id/imageViev8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:onClick="spostagiu"
+            android:tag="8"
+            app:layout_column="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_row="2"
+            tools:layout_editor_absoluteX="-25dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <ImageView
+            android:id="@+id/imageViev9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="35dp"
+            android:onClick="spostagiu"
+            android:tag="9"
+            app:layout_column="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_row="2"
+            tools:layout_editor_absoluteX="-25dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/testoVincitoreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/giocaAncoraId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00000000"
+        android:onClick="giocaAncora"
+        android:text="Gioca ancora."
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testoVincitoreId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
